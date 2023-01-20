@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Bedi">
+    <meta name="keywords" content="fcc survey form, freecodecamp survey form">
+    <meta name="description" content="freecodecamp survey form certification project">
+    <title>Survey form</title>
+
+</head>
+
+<body>
+    <div class="container">
+    <div class="header">
+        <h1 id="title">FreeCodeCamp Survey </h1>
+        <p id="description" class="description">Thank you for taking the time to help improve our company.</p>
+    </div>
+    <div class="form">
+        <form action="#" method="post" id="survey-form">
+            <div class="details">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="First Name" id="name" placeholder="Enter your name" required min="5" max="15" class="form-control">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="example@email.com" required min="5" max="25" class="form-control">
+                <label for="number" id="number-label">Number:</label>
+                <input type="number" name="number" id="number" placeholder="23" min="5" max="15" required class="form-control">
+            </div>
+
+            <div class="details">
+                <p>What best describes your current role?</p>
+                <select name="role" id="dropdown" class="form-control">
+                    <option value="select current role" selected disabled>Select current role</option>
+                    <option value="student">Full-time student</option>
+                    <option value="staff">Full time Staff</option>
+                    <option value="part staff">part-time staff</option>
+                    <option value="part student">Part-time Student</option>
+                </select>
+            </div>
+            <div>
+                <p>Would you recommend freeCodeCamp to your friends and colleagues?</p>
+                <input type="radio" name="recommend" id="user-recommend" checked class="input-radio" value="definitely"> Definitely
+                <input type="radio" name="recommend" id="user-recommend" class="input-radio"value="maybe"> Maybe
+                <input type="radio" name="recommend" id="user-recommend" class="input-radio" value="no"> No
+                <input type="radio" name="recommend" id="user-recommend" class="input-radio"value="i prefer not to say"> I prefer not to say
+                <input type="radio" name="recommend" id="user-recommend" class="input-radio" value="other"> Other
+            </div>
+            <div>
+                <p> What would you like to learn at freeCodeCamp:</p>
+                <input type="checkbox" name="learn" id="" value="web development" class="input-checkbox"> Web development
+                <input type="checkbox" name="learn" id="" value="Programming" class="input-checkbox"> Programming
+                <input type="checkbox" name="learn" id="" value="digital Marketing" class="input-checkbox"> Digital Marketing
+                <input type="checkbox" name="learn" id="" value="Others" > Others
+            </div>
+            <div>
+                <h3>Comments</h3>
+                <p> Tell us what you think about us:</p>
+                <textarea name="comments" id="" cols="30" rows="10" class="input-textarea"></textarea>
+            </div>
+          <button type="submit" id="submit" >Submit</button>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
+<!-- partial -->
+
+</body>
+</html>
